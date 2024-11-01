@@ -9,7 +9,7 @@ const cityDate = document.getElementById('City-Date');
 
 
 async function getData(cityName) {
-   const promise = await fetch( `http://api.weatherapi.com/v1/current.json?key=3d2bad89b7b8441587a142254240111&q=${cityName}&aqi=yes`
+   const promise = await fetch( `https://api.weatherapi.com/v1/current.json?key=3d2bad89b7b8441587a142254240111&q=$(cityname)&aqi=yes`
 
     )
     return await promise.json()
